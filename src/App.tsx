@@ -21,7 +21,7 @@ export const App = () => {
 
     let x
     if (weather) {
-        x = weather.list.map((item: any) => <div>{item.main.temp} <h1>{item.weather[0].main}</h1></div>)
+        x = weather.list.map((item: any) => <div>{Math.round(item.main.temp)} <h1>{item.weather[0].main}</h1></div>)
     }
 
     let inputCity = (e: any) => {
