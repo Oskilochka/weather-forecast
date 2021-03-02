@@ -1,0 +1,25 @@
+:root {
+    --blue: lightgrey;
+    --white: darkslategrey;
+}
+
+.dark {
+    --theme-color: var(--white);
+    --theme-page-background:var(--blue);
+    --theme-page-text: var(--white) ;
+}
+
+.light {
+    --theme-color: var(--blue);
+    --theme-page-background:var(--white);
+    --theme-page-text: var(--blue);
+}
+
+.wrap {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 22px;
+    background: var(--theme-page-background);
+    color: var(--theme-page-text);
+}
+
