@@ -1,9 +1,15 @@
 import React, {useEffect, useState} from 'react'
 import {weatherAPI} from "./api/api";
 import './app.css'
+import {FindCity} from "./components/FindCity";
+import {Units} from "./components/Units";
+import {ThemeBtn} from "./components/ThemeBtn";
+import {WeatherList} from "./components/WeatherCard";
+import {Error} from "./components/Error";
 
 type TWeatherData = {
-    list: any
+    list: any,
+    city: any
 }
 
 export const App = () => {
@@ -12,45 +18,44 @@ export const App = () => {
     const [weather, setWeather] = useState<TWeatherData | undefined>()
     const [units, setUnits] = useState('metric')
     const [theme, setTheme] = useState('dark');
+    const [error, setError] = useState<{} | undefined>(undefined)
 
     useEffect(() => {
-        weatherAPI.getWeatherData(city, units).then(res => {
-            setWeather(res.data)
-        })
+        weatherAPI.getWeatherData(city, units)
+            .then(res => {
+                setError(undefined);
+                setWeather(res.data)
+            })
+            .catch(error => {
+                setError(error)
+            })
     }, [city, units])
 
-    let x
-    if (weather) {
-        x = weather.list.map((item: any) => <div>{Math.round(item.main.temp)} <h1>{item.weather[0].main}</h1></div>)
-    }
+    let countryName = weather?.city.country
 
-    let inputCity = (e: any) => {
-        setInput(e.target.value)
-    }
-    const changeCityName = () => {
-        setCity(input)
-    }
-
-    const changeTheme = (e: any) => {
-        if(theme === "light") {
-            setTheme("dark")
-        }  else {
-            setTheme('light')
-        }
-    }
     return (
-        <div className={`wrap ${theme}`}>
-            <h1>Find weather</h1>
-            <label>Write you city</label>
-            <input onChange={inputCity}/>
-            <button onClick={changeCityName}> Find</button>
-            <select name='temp'>
-                <option onClick={() => setUnits('metric')}>Celsium</option>
-                <option onClick={() => setUnits('imperial')}>Farengeight</option>
-            </select>
-            <button onClick={e=>changeTheme(e)}>Theme</button>
-            <h1>{city}</h1>
-            {x}
+        <div className={`app ${theme}`}>
+            <div className='wrap'>
+                <h1>Weather Forecast</h1>
+                <FindCity input={input} setInput={setInput} setCity={setCity}/>
+                <div className='tools'>
+                    <ThemeBtn theme={theme} setTheme={setTheme}/>
+                    <Units setUnits={setUnits}/>
+                </div>
+
+                <h3>{error ? null : <div>{city}, {countryName}</div>}</h3>
+                <div className='weatherList'>
+                    {error
+                        ? <Error error={error} city={city}/>
+
+                        : <WeatherList units={units} weather={weather}/>}
+                </div>
+            </div>
         </div>
-    );
+    )
 }
+
+
+
+
+
