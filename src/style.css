@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Montserrat', sans-serif;
+}
+
 :root {
     --black: #1c1c1c;
     --light: #e1e1e1;
@@ -28,8 +37,6 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-
-
 }
 
 /* Weather Card */

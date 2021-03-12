@@ -20,7 +20,7 @@ const useStyles = createUseStyles({
 export const Units: FC<PropsType> = ({setUnits}) => {
     const classes = useStyles()
     return <select className={classes.select} name='temp'>
-        <option onClick={() => setUnits('metric')}>Celsium</option>
+        <option onClick={() => setUnits('metric')}>Celsius</option>
         <option onClick={() => setUnits('imperial')}>Fahrenheit</option>
     </select>
 }

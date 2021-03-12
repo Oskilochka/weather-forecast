@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {weatherAPI} from "./api/api";
-import './app.css'
+import './style.css'
 import {FindCity} from "./components/FindCity";
 import {Units} from "./components/Units";
 import {ThemeBtn} from "./components/ThemeBtn";
