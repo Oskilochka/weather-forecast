@@ -1,5 +1,5 @@
-import React, {FC} from "react";
-import {createUseStyles} from "react-jss";
+import React, {FC} from "react"
+import {createUseStyles} from "react-jss"
 
 type PropsType = {
     setUnits: (value: string) => void
@@ -14,11 +14,12 @@ const useStyles = createUseStyles({
         padding: "5px",
         appearance: "none",
         cursor: "pointer"
-    },
+    }
 })
 
 export const Units: FC<PropsType> = ({setUnits}) => {
     const classes = useStyles()
+
     return <select className={classes.select} name='temp'>
         <option onClick={() => setUnits('metric')}>Celsius</option>
         <option onClick={() => setUnits('imperial')}>Fahrenheit</option>

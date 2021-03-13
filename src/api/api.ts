@@ -10,7 +10,7 @@ export const weatherAPI = {
     async getWeatherData(cityName: string, units: string) {
         const res = await instance.get(
             `?q=${cityName}&appid=${API_KEY}&units=${units}`
-        );
-        return res;
-    },
-};
+        )
+        return res
+    }
+}
