@@ -1,5 +1,5 @@
 import React, {FC} from "react"
-import {createUseStyles} from "react-jss";
+import {createUseStyles} from "react-jss"
 
 type CardType = {
     item: any,
@@ -40,7 +40,6 @@ const useStyles = createUseStyles({
     }
 })
 
-
 export const Card: FC<CardType> = ({item, units}) => {
     const classes = useStyles()
 
@@ -57,8 +56,9 @@ export const Card: FC<CardType> = ({item, units}) => {
                         : <span> &#176;F </span>} </h3>
                 <img src={imgPath + item.weather[0].icon + ".png"} className={classes.icon} alt='weather-icon'/>
             </div>
-            <h4 className={classes.detail}>Feels
-                like: {Math.round(item.main.feels_like)} {units === "metric" ? "°C" : "°F"} </h4>
+            <h4 className={classes.detail}>
+                Feels like: {Math.round(item.main.feels_like)} {units === "metric" ? "°C" : "°F"}
+            </h4>
             <h4 className={classes.description}> {item.weather[0].main} </h4>
             <h5 className={classes.detail}>{item.weather[0].description}</h5>
             <h5>Wind Speed: {item.wind.speed}</h5>

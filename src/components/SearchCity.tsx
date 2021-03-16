@@ -23,12 +23,12 @@ const useStyles = createUseStyles({
         '&:focus': {
             border: "none",
             outline: 'none',
-        }
+        },
     },
     findBox: {
-        borderBottom: '1px solid black',
-        paddingBottom: '10px'
-    }
+        borderBottom: '1px solid grey',
+        paddingBottom: '10px',
+    },
 })
 
 export const SearchCity: FC<PropsType> = ({inputCity, setInputCity, setCity}) => {

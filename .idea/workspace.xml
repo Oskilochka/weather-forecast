@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253aeb0c-efca-447a-8213-1edbd467fe30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CardsList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Preloader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FindCity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchCity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Preloader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Preloader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchCity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchCity.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ThemeBtn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeBtn.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Units.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Units.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WeatherCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/preloader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/preloader.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +61,7 @@
       <recent name="D:\work\study_dev\react\weather\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\study_dev\react\weather\src\common" />
       <recent name="D:\work\study_dev\react\weather" />
     </key>
   </component>
@@ -99,7 +98,9 @@
       <workItem from="1614867978479" duration="25060000" />
       <workItem from="1615408545558" duration="6569000" />
       <workItem from="1615540800829" duration="2223000" />
-      <workItem from="1615571495689" duration="15450000" />
+      <workItem from="1615571495689" duration="20825000" />
+      <workItem from="1615648150475" duration="873000" />
+      <workItem from="1615927542368" duration="3252000" />
     </task>
     <servers />
   </component>

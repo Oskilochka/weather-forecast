@@ -11,7 +11,7 @@ type PropsType = {
 const useStyles = createUseStyles({
     wrap: {
         cursor: "pointer",
-        marginRight: "30px"
+        transition: "1s"
     }
 })
 
@@ -19,10 +19,12 @@ export const ThemeBtn: FC<PropsType> = ({theme, setTheme}) => {
     const classes = useStyles()
 
     const changeTheme = () => {
+        localStorage.setItem('Theme', theme)
         if (theme === 'light') {
             setTheme('dark')
         } else {
             setTheme('light')
+
         }
     }
 

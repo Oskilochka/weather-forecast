@@ -36,11 +36,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
 }
 
-.weatherList {
-    display: flex;
+.wrap * {
+    transition: 1s;
 }
 
 input {
@@ -48,7 +47,7 @@ input {
     font-weight: bolder;
 }
 
-.tools {
-    display: flex;
-    margin-top: 25px;
+button {
+    background-color: var(--theme-page-text);
+    color: var(--theme-page-background)
 }

@@ -1,5 +1,5 @@
 import React, {FC} from "react"
-import {createUseStyles} from "react-jss";
+import {createUseStyles} from "react-jss"
 
 const useStyles = createUseStyles({
     git: {
@@ -11,7 +11,7 @@ const useStyles = createUseStyles({
     },
     info: {
         fontWeight: "300",
-        marginTop: "80px"
+        marginTop: "70px"
     }
 })
 
